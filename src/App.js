@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import Characters from './components/Characters';
+import { getChar, getEpisodes, getPlanet } from './actions';
+import { Route } from 'react-router';
+import Episodes from './components/Episodes';
+
 
 function App() {
+
+  const dispatch = useDispatch()
+  const characters = useSelector(store => store.characters)
+
+  useEffect(() => {
+    dispatch(getChar())
+    dispatch(getPlanet())
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route path='/episodes'>
+        <Episodes />
+      </Route>
+      <Route path='/characters'>
+        <Characters characters={characters} />
+      </Route>
     </div>
   );
 }
