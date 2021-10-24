@@ -1,0 +1,17 @@
+.container {
+    background-image: url('./2880737.png');
+    height: 100vh;
+    width: 100%;
+}
+
+.button {
+    background-color: aliceblue;
+    padding: 13px 50px 13px;
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 200px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}

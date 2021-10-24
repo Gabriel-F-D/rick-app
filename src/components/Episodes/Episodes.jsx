@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getEpisodes } from '../actions'
+import { getEpisodes } from '../../actions'
 
 
 const Episodes = () => {
@@ -21,7 +21,5 @@ const Episodes = () => {
         </div>
     )
 }
-
-
 
 export default Episodes
