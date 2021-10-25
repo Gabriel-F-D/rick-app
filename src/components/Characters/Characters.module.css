@@ -1,9 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+
+p {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'Gaegu', cursive;
+  font-size: 25px;
+}
 .containerFlex {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(248, 249, 251, 0.972);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
 /* .charContainer {

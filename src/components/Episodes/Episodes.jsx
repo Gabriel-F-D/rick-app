@@ -1,23 +1,29 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getEpisodes } from '../../actions'
-
+import styles from '../Episodes/Episodes.module.css'
+import NavBar from '../NavBar/NavBar'
 
 const Episodes = () => {
     const dispatch = useDispatch()
     const episodes = useSelector(store => store.episodes)
 
-    useEffect(() =>{
+    useEffect(() => {
         dispatch(getEpisodes())
-    },[])
+    }, [])
 
     return (
         <div>
-            {episodes.map((ep)=> 
+            <NavBar />
+            <div className={styles.containerChapters}>
+                {episodes.map((ep) =>
                 (
-                    <h6>{ep.name}</h6>
+                    <div className={styles.chapterFlex}>
+                        <h6>{ep.name}</h6>
+                    </div>
                 )
-            )}
+                )}
+            </div>
         </div>
     )
 }

@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom'
 
 const Homepage = () => {
     return (
-        <>
-            <div className={styles.container}>
+        <div className={styles.container}>
+            <div>
                 <NavBar />
-                <Link to='/characters' className={styles.button}>I don't know rick</Link>
+                <h3 className={styles.appTitle}>Rick and Morty</h3>
+                <Link to='/characters'>
+                    <button className={styles.buttonHp}>
+                        Get schwifty
+                    </button>
+                </Link>
             </div>
-
-        </>
-
+        </div>
     )
 }
 

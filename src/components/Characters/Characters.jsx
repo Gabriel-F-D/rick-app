@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getChar, getPageChar } from "../../actions";
-import styles from '../Characters/Characters.module.css'
+import styles from '../Characters/Characters.module.css';
 import NavBar from "../NavBar/NavBar";
 
 const Characters = () => {
@@ -50,8 +50,10 @@ const Characters = () => {
                 ))}
 
             </div>
-            <button onClick={next}>Next</button>
-            <button onClick={prev}>prev</button>
+            <div>
+                <button onClick={prev}>prev</button>
+                <button onClick={next}>Next</button>
+            </div>
         </div>
     )
 }
