@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
 
 
-p {
+.p {
   font-family: 'Gemunu Libre', sans-serif;
   font-size: 20px;
+  color: rgb(131, 14, 131);
 }
 
 h4 {
@@ -12,12 +13,12 @@ h4 {
   font-size: 25px;
 }
 .containerFlex {
-    margin-top: 60px;
+    /* margin-top: 60px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(0deg, rgb(131, 34, 195) 0%, rgb(45, 211, 253) 100%);
 }
 
 /* .charContainer {
@@ -82,4 +83,27 @@ h4 {
     background-color: #57dbecef;
     color: rgb(54, 52, 52);
     transform: rotateY(180deg);
+  }
+
+  .botonesCont {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(124, 18, 185);
+    padding-top: 8px;
+  }
+
+  .boton {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: rgb(251, 249, 245);
+    background-color: rgb(32, 172, 158);
+    transition-duration: 0.5s;
+    border: none;
+    border-radius: 10%;
+    margin-left: 4px;
+  }
+
+  .boton:hover {
+    cursor: pointer;
+    background-color: rgb(85, 10, 129);
   }

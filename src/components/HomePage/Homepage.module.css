@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .container {
     background-image: url('./2880737.png');
@@ -9,12 +9,12 @@
 }
 
 .appTitle {
-    font-family: 'Monofett', cursive;
+    font-family: 'Caveat', cursive;
     color: rgb(250, 249, 244);
-    font-size: 70px;
+    font-size: 100px;
     position: absolute;
     margin-top: 300px;
-    margin-left: 1450px;
+    margin-left: 1510px;
 }
 
 .buttonHp {

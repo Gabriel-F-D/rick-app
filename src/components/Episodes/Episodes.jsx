@@ -19,7 +19,7 @@ const Episodes = () => {
                 {episodes.map((ep) =>
                 (
                     <div className={styles.chapterFlex}>
-                        <h6>{ep.name}</h6>
+                        <p>{ep.name}</p>
                     </div>
                 )
                 )}

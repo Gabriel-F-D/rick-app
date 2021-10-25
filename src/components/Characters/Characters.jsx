@@ -32,6 +32,7 @@ const Characters = () => {
     return (
         <div>
             <NavBar />
+            <img src="../img/Rick.jpg" alt="wallpaper" />
             <div className={styles.containerFlex}>
                 {characters.map((perChar) => (
                     <div className={styles.flipCard}>
@@ -41,18 +42,18 @@ const Characters = () => {
                             </div>
                             <div className={styles.flipCardBack}>
                                 <h4>{perChar.name}</h4>
-                                <p style={{ padding: "-5px" }}>Type : {perChar.species}</p>
-                                <p style={{ padding: "-5px" }}>Currently : {perChar.status}</p>
-                                <p style={{ padding: "-5px" }}>Last known location : {perChar.location.name}</p>
+                                <p className={styles.p} style={{ padding: "-5px" }}>Type : {perChar.species}</p>
+                                <p className={styles.p} style={{ padding: "-5px" }}>Currently : {perChar.status}</p>
+                                <p className={styles.p} style={{ padding: "-5px" }}>Last known location : {perChar.location.name}</p>
                             </div>
                         </div>
                     </div>
                 ))}
 
             </div>
-            <div>
-                <button onClick={prev}>prev</button>
-                <button onClick={next}>Next</button>
+            <div className={styles.botonesCont}>
+                <button className={styles.boton} onClick={prev}>Prev</button>
+                <button className={styles.boton} onClick={next}>Next</button>
             </div>
         </div>
     )

@@ -19,8 +19,8 @@ const Locations = () => {
                 {locations.map((plnt =>
                 (
                     <div className={styles.planetFlex}>
-                        <h6 className={styles.namePl}>{plnt.name}</h6>
-                        <h6 className={styles.dimensionPL}>{plnt.dimension}</h6>
+                        <p className={styles.namePl}>{plnt.name}</p>
+                        <p className={styles.dimensionPL}>{plnt.dimension}</p>
                     </div>
                 )
                 ))}

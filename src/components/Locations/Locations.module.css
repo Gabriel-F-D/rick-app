@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap');
 
-h6{
+p{
     font-family: 'Gaegu', cursive;
     font-size: 20px;
     color: honeydew;
@@ -20,10 +20,11 @@ h6{
     flex-direction: column;
     text-align: center;
     width: 200px;
-    height: 200px;
+    height: 150px;
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     border-radius: 5%;
+    margin-bottom: 5px;
 }
 
 .namePl {
