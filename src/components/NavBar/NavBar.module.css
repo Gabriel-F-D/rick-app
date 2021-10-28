@@ -26,3 +26,8 @@
     background: rgb(8, 240, 209);
     color: black;
 }
+
+.navBar h3 {
+    color: aliceblue;
+    text-justify: center;
+}

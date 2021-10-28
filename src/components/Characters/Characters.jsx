@@ -31,8 +31,10 @@ const Characters = () => {
     console.log(page)
     return (
         <div>
-            <NavBar />
-            <img src="../img/Rick.jpg" alt="wallpaper" />
+            <div className={styles.containerMainChar}>
+                <NavBar />
+                <p className={styles.pInfo}>Now streaming in all platforms</p>
+            </div>
             <div className={styles.containerFlex}>
                 {characters.map((perChar) => (
                     <div className={styles.flipCard}>
@@ -41,7 +43,7 @@ const Characters = () => {
                                 <img className={styles.charImg} src={perChar.image} style={{ minWidth: "200px" }} />
                             </div>
                             <div className={styles.flipCardBack}>
-                                <h4>{perChar.name}</h4>
+                                <h4 className={styles.h4}>{perChar.name}</h4>
                                 <p className={styles.p} style={{ padding: "-5px" }}>Type : {perChar.species}</p>
                                 <p className={styles.p} style={{ padding: "-5px" }}>Currently : {perChar.status}</p>
                                 <p className={styles.p} style={{ padding: "-5px" }}>Last known location : {perChar.location.name}</p>

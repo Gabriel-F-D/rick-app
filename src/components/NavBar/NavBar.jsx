@@ -15,6 +15,8 @@ const NavBar = () => {
             <Link to='/locations'>
                 <a href='#'>Planets</a>
             </Link>
+
+            <h3>[Adult Swim]</h3>
         </div>
     )
 }
